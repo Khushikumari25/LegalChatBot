@@ -1,0 +1,83 @@
+# ============================================================================
+# CORE DEPENDENCIES
+# ============================================================================
+
+# Python version: 3.8+
+
+# Environment management
+python-dotenv>=1.0.0
+
+# ============================================================================
+# MILESTONE 1: Document Loading & Indexing
+# ============================================================================
+
+# PDF processing
+PyMuPDF>=1.23.0
+pdfminer.six>=20221105
+
+# HTML processing
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# LangChain (document loaders and text splitters)
+langchain>=0.1.0
+langchain-community>=0.0.10
+langchain-text-splitters>=0.0.1
+
+# Pinecone vector database
+pinecone-client>=3.0.0
+
+# Embeddings
+sentence-transformers>=2.2.0
+
+# Google Generative AI (optional, for Milestone 1)
+langchain-google-genai>=0.0.5
+
+# Progress bars
+tqdm>=4.65.0
+
+# ============================================================================
+# MILESTONE 2: RAG Pipeline with OpenAI
+# ============================================================================
+
+# OpenAI API (REQUIRED for Milestone 2)
+openai>=1.0.0
+
+# LangChain Pinecone integration
+langchain-pinecone>=0.0.1
+
+# HuggingFace embeddings for LangChain
+langchain-huggingface>=0.0.1
+
+# Numpy (required for embeddings)
+numpy>=1.24.0
+
+# ============================================================================
+# OPTIONAL BUT RECOMMENDED
+# ============================================================================
+
+# Jupyter notebooks (for interactive testing)
+jupyter>=1.0.0
+ipykernel>=6.0.0
+
+# Data analysis
+pandas>=2.0.0
+
+# ============================================================================
+# INSTALLATION INSTRUCTIONS
+# ============================================================================
+# 
+# Install all dependencies:
+#   pip install -r requirements.txt
+#
+# Or install in groups:
+#
+# Milestone 1 only:
+#   pip install python-dotenv PyMuPDF pdfminer.six beautifulsoup4 lxml
+#   pip install langchain langchain-community langchain-text-splitters
+#   pip install pinecone-client sentence-transformers tqdm
+#
+# Milestone 2 additions:
+#   pip install openai langchain-pinecone langchain-huggingface
+#
+# ============================================================================
